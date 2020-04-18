@@ -1,0 +1,6 @@
+# A list of files/folders we don't want in our repository
+
+node_modules
+yarn-error.log
+package-lock.json
+yarn.lock

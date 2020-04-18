@@ -1,0 +1,6 @@
+.big {
+    font-family: sans-serif;
+}
+:global .globalClassname {
+    text-decoration: line-through;
+}
