@@ -2,10 +2,6 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import styles from './style/App.module.css';
 
-const StyledDiv = styled.div`
-    transform: rotate(5deg);
-`;
-
 const App = () => {
     const [runTime, setRunTime] = useState(0);
     const [time, setTime] = useState(Date.now());
@@ -37,12 +33,7 @@ const App = () => {
 
     return (
         <>
-            <StyledDiv
-                className={`${styles.big} globalClassname`}
-                style={{ textTransform: 'uppercase' }}
-            >
-                {currentTime.toFixed(2)}
-            </StyledDiv>
+            <div>{currentTime.toFixed(2)}</div>
             <button
                 type="button"
                 onClick={() => {
