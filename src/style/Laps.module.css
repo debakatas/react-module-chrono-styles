@@ -1,0 +1,11 @@
+.container {
+    max-height: 200px;
+    overflow-y: auto;
+    color: #7d8b8b;
+    width: 200px;
+}
+
+.element {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}

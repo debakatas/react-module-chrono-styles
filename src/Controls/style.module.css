@@ -1,5 +1,5 @@
 .button {
-    background: #6a58a2;
+    background: var(--purple);
     color: white;
     font-weight: bold;
     padding: 0.5rem 1rem;

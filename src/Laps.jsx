@@ -1,11 +1,8 @@
 import React from 'react';
+import classNames from './style/Laps.module.css';
 
 const Laps = ({ laps }) => (
-    <ul
-        style={{
-            color: '#7d8b8b',
-        }}
-    >
+    <ul className={classNames.container}>
         {laps.map((lap, index) => {
             const lapFormat = lap.toFixed(2);
             const lapCounter = `[${String(
@@ -14,10 +11,9 @@ const Laps = ({ laps }) => (
 
             return (
                 <li
+                    className={classNames.element}
                     style={{
                         opacity: (index + 1) / 10,
-                        listStyle: 'none',
-                        marginBottom: 10,
                     }}
                 >
                     {lapCounter} {lapFormat}
