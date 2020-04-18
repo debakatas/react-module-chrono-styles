@@ -1,5 +1,6 @@
 import React from 'react';
 import classNames from './style/Laps.module.css';
+import { StyledDiv } from './Timer';
 
 const Laps = ({ laps }) => (
     <ul className={classNames.container}>
