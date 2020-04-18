@@ -1,9 +1,14 @@
 *
-    box-sizing: border-box
-    margin: 0
-    padding: 0
-    font-family: sans-serif
-    object-fit: contain
+    &
+    &::after
+    &::before
+        box-sizing: border-box
+        margin: 0
+        padding: 0
+        font-family: sans-serif
+        object-fit: contain
+        font-size: inherit
+        transition: all 0.15s ease-in-out
 
 button
     border: 0
@@ -11,17 +16,25 @@ button
 
 html
 body
-#debakatas
     font-size: 16px
     height: 100vh
     overflow: hidden
     width: 100vw
 
-#debakatas
-    display: flex
-    justify-content: center
-    align-items: center
-    flex-direction: column
+body
     background: url("../assets/bg.png")
     background-position-x: -180px
     background-repeat: no-repeat
+    display: flex
+    justify-content: center
+    align-items: center
+
+#debakatas
+    background: white
+    display: inline-flex
+    flex-grow: 0
+    padding: 2rem
+    border-radius: 1rem
+    flex-direction: column
+    justify-content: center
+    align-items: center
