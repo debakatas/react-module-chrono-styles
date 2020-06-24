@@ -1,7 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
+import formatNumber from './format-number';
 
-export const StyledDiv = styled.div`
+const StyledDiv = styled.div`
     font-size: 4rem;
     width: 200px;
     height: 200px;
@@ -24,13 +25,17 @@ export const StyledDiv = styled.div`
 
 const Timer = ({ time }) => {
     const [square, setSquare] = React.useState(false);
+    const minutes = Math.floor(time / 60);
+    const seconds = Math.floor(time - minutes * 60);
 
     return (
         <StyledDiv
             square={square}
             onClick={() => setSquare((b) => !b)}
         >
-            {time.toFixed(0)}
+            {`${formatNumber(minutes)}:${formatNumber(
+                seconds
+            )}`}
         </StyledDiv>
     );
 };

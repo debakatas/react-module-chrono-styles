@@ -2,8 +2,13 @@
     background: var(--purple);
     color: white;
     font-weight: bold;
-    padding: 0.5rem 1rem;
-    border-radius: 0.5rem;
+    padding: 1rem 1.5rem;
+    border-radius: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.button:last-of-type {
+    margin-right: 0;
 }
 
 .button:hover {
